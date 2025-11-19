@@ -1,26 +1,17 @@
 const apiImageUrl = "https://lanciweb.github.io/demo/api/pictures/";
 const row = document.querySelector(".row");
+const col = document.getElementsByClassName("col");
 
 let images = [];
-let col = [];
 
 axios
     .get(apiImageUrl)
     .then(function (resp) {
         images = resp.data;
-        
-        //Create columns
+
         for(let i = 0; i < resp.data.length; i++)
         {
-            let newColumn = document.createElement("div");
-            newColumn.classList.add("col");
-            row.append(newColumn);
-        }
-
-        const col = document.getElementsByClassName("col");
-        
-        //Fill columns
-        for (let i = 0; i < resp.data.length; i++){
+            createCol();
             const card = createCard(images[i]);
             printCard(card, col[i]);
         }
@@ -40,6 +31,9 @@ function createCard(activity)
 
 function createCol()
 {
+    let newColumn = document.createElement("div");
+    newColumn.classList.add("col");
+    row.append(newColumn);
 }
 
 function printCard(card, place)
