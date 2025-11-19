@@ -66,6 +66,21 @@ body
     background-image: url(../img/cork.png);
 }
 
+.overlay
+{
+    background-color:rgba(0, 0, 0, 0.85);
+    position: fixed;
+    height: 100%;
+    z-index: 1;
+    width: 100%;
+}
+
+.overlay img
+{
+    width: 80%;
+    max-width: 500px;
+}
+
 /*containers*/
 .container
 {
@@ -118,6 +133,11 @@ body
 .flex
 {
     display: flex;
+}
+
+.flex-column
+{
+    flex-direction: column;
 }
 
 .wrap
