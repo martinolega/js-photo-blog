@@ -1,0 +1,151 @@
+/* RESET */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*
+{
+    max-width: 100%;
+}
+
+/* COMMON */
+/* Typography */
+.title
+{
+    font-family: 'Edu Tas Beginner', sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+}
+
+.date
+{
+    font-family: 'Sometype Mono', 'monospace';
+    color: rgb(80, 80, 80);
+}
+
+.activity
+{
+    font-family: 'Edu Tas Beginner', sans-serif;
+    font-weight: 1000;
+    font-size: 1.3rem;
+}
+
+/*Layout*/
+header
+{
+    width: 100%;
+}
+
+.margin-title
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.margin-top
+{
+    margin-top: 50px;
+}
+
+.margin-date
+{
+    margin-top: 10px;
+}
+
+/*background*/
+header
+{
+    background-image: url(../img/wall.png);
+}
+
+body
+{
+    background-image: url(../img/cork.png);
+}
+
+/*containers*/
+.container
+{
+    width: 70%;
+    max-width: 1000px;
+}
+
+.width-100
+{
+    width: 100%;
+}
+
+.width-90
+{
+    width: 90%;
+}
+
+.row
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    background-color: white;
+    padding: 10px;
+}
+
+.pin
+{
+    position:absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -30%);
+}
+
+.gap-40
+{
+    gap: 40px;
+}
+
+.card
+{
+}
+
+/*Flex*/
+.flex
+{
+    display: flex;
+}
+
+.wrap
+{
+    flex-wrap: wrap;
+}
+
+.justify-content-center
+{
+    justify-content: center;
+}
+
+.justify-content-between
+{
+    justify-content: space-between;
+}
+
+.align-items-center
+{
+    align-items: center;
+}
+
+/*Utilities*/
+.align-self-center
+{
+    align-self: center;
+}
