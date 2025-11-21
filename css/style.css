@@ -66,7 +66,7 @@ body
     background-image: url(../img/cork.png);
 }
 
-.overlay
+#overlay
 {
     background-color:rgba(0, 0, 0, 0.85);
     position: fixed;
@@ -75,7 +75,7 @@ body
     width: 100%;
 }
 
-.overlay img
+#overlay img
 {
     width: 80%;
     max-width: 500px;
@@ -164,4 +164,19 @@ body
 .align-self-center
 {
     align-self: center;
+}
+
+.display-none
+{
+    display: none;
+}
+
+button
+{
+    padding: 3px;
+}
+
+.rotate-10
+{
+    rotate: 10deg;
 }
