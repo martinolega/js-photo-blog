@@ -65,11 +65,14 @@ overlay.addEventListener("click", () => {
 
 function createCard(activity)
 {
+    console.log(activity);
+    const {title, date, url} = activity;
+
     const result = `
             <img class="pin" src="./img/pin.svg" alt="pin">
-            <img class="image" src="${activity.url}" alt"${activity.title}">
-            <p class="margin-date date">${activity.date}</p>
-            <p class="activity">${activity.title.toUpperCase()}</p>
+            <img class="image" src="${url}" alt="${title}">
+            <p class="margin-date date">${date}</p>
+            <p class="activity">${title.toUpperCase()}</p>
             `
     
     return result;
